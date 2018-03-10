@@ -1,0 +1,2 @@
+include ':app', ':vitamio'
+project(':vitamio').projectDir = new File('vitamio')

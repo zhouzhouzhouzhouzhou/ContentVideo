@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="BottomTabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item><!--去除RadioButton默认带的圆点-->
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@drawable/tab_seclector_tv_color</item>
+    </style>
+
+    <style name="RadioButtonStyle">
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="TopTabStyle">
+        <item name="tabIndicatorColor">#FFFFFF</item> <!--TAB底部滑块颜色-->
+        <item name="tabIndicatorHeight">12dp</item> <!--TAB底部滑块高度-->
+        <!--<item name="tabPaddingStart">28dp</item> &lt;!&ndash;TAB左边padding&ndash;&gt;-->
+        <item name="tabPaddingEnd">25dp</item> <!--TAB右边padding-->
+        <!--<item name="tabBackground">?attr/selectableItemBackground</item> &lt;!&ndash;TAB背景色&ndash;&gt;-->
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <!--TAB文字样式-->
+        <item name="tabSelectedTextColor">#FF8833</item> <!--TAB选中文字颜色-->
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab"> <!--TAB文字样式-->
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="textAllCaps">false</item> <!--英文大写,默认true-->
+    </style><!--<style name="BottomTabStyle">--><!--<item name="android:layout_width">100dp</item>--><!--<item name="android:layout_height">200dp</item>--><!--<item name="android:layout_gravity">center_vertical</item>--><!--<item name="android:button">@null</item>--><!--<item name="android:drawablePadding">0dp</item>--><!--<item name="android:paddingTop">5dp</item>--><!--<item name="android:textSize">13sp</item>--><!--<item name="android:paddingLeft">5dp</item>--><!--<item name="android:paddingRight">5dp</item>--><!--<item name="android:paddingBottom">2dp</item>--><!--<item name="android:layout_weight">1</item>--><!--<item name="android:gravity">center</item>--><!--<item name="android:background">@color/white</item>--><!--</style>-->
+
+
+    //扩展动画定义的style
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果，这里我们设为false,是为了防止dialog出现导致页面变暗 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/open</item>
+        <item name="android:windowExitAnimation">@anim/close</item>
+    </style>
+
+    <style name="anim_menu_bottombar">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

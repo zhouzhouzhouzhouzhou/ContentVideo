@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">学前儿童早教动漫课堂</string>
+    <string name="home">首页</string>
+    <string name="mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_we">关于我们</string>
+    <string name="disclaimer">免责声明</string>
+    <string name="title_activity_base">BaseActivity</string>
+</resources>

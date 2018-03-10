@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="376dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.79">
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_select"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/checkbox_collection_selector"-->
+            <!--android:visibility="gone"></Button>-->
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/btn_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_collection_selector" />
+
+        <ImageView
+            android:id="@+id/video_img"
+            android:layout_width="155dp"
+            android:layout_height="88dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="9dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/video_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小猪佩奇"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="第一集"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_delete"
+            android:layout_width="66dp"
+            android:layout_height="88dp"
+            android:background="#FE5353"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</LinearLayout>
